@@ -29,14 +29,14 @@ class SalesHeaderCell: UITableViewCell {
             resetDetails()
             return
         }
-        customerEmailLabel.text = "Email : \(document!.customer.email)"
-        customerGenderLabel.text = "Gender : \(document!.customer.gender)"
-        customerAgeLabel.text = "Age : \(document!.customer.age)"
-        customerSatisfactionLabel.text = "Satisfaction : \(document!.customer.satisfaction)"
-        customerDateLabel.text = "Sale : \(document!.saleDate.getDate()?.getDate() ?? "")"
-        customerStoreLabel.text = "Store : \(document!.storeLocation)"
-        customerCouponLabel.text = "Coupon : \(document!.couponUsed)"
-        customerPurchaseLabel.text = "Purchase : \(document!.purchaseMethod)"
+        customerEmailLabel.text = "\(StringConstants.EmailLabel) : \(document!.customer.email)"
+        customerGenderLabel.text = "\(StringConstants.GenderLabel) : \(document!.customer.gender)"
+        customerAgeLabel.text = "\(StringConstants.AgeLabel) : \(document!.customer.age)"
+        customerSatisfactionLabel.text = "\(StringConstants.SatisfactionLabel) : \(document!.customer.satisfaction)"
+        customerDateLabel.text = "\(StringConstants.SaleLabel) : \(document!.saleDate.getDate()?.getDate() ?? "")"
+        customerStoreLabel.text = "\(StringConstants.StoreLabel) : \(document!.storeLocation)"
+        customerCouponLabel.text = "\(StringConstants.CouponLabel) : \(document!.couponUsed)"
+        customerPurchaseLabel.text = "\(StringConstants.PurchaseLabel) : \(document!.purchaseMethod)"
     }
     func resetDetails()
     {
